@@ -6,5 +6,8 @@
 .wrap header nav {}
 .wrap header nav .gnb {}
 .wrap header nav .gnb li {}
+.wrap header nav .gnb li a {}
 .wrap header .right_menu_wrap {}
-.wrap header .right_menu_wrap a{}
+.wrap header .right_menu_wrap li {}
+.wrap header .right_menu_wrap li a{}
+.wrap header .right_menu_wrap li a img {}

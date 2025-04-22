@@ -11,3 +11,25 @@
 .wrap header .right_menu_wrap li {}
 .wrap header .right_menu_wrap li a{}
 .wrap header .right_menu_wrap li a img {}
+.wrap main {}
+/* ==============================================================footer */
+.wrap footer {}
+.wrap footer .top {}
+.wrap footer .top .left_menu {}
+.wrap footer .top .left_menu a{}
+.wrap footer .top .left_menu a:nth-child(1) {} /* :first-child */
+.wrap footer .top .left_menu a:nth-child(2) {}
+.wrap footer .top .left_menu a img {}
+.wrap footer .top .right_menu {}
+/* ===========================footer 패밀리사이트+사이트맵 공통 */
+.wrap footer .top .right_menu .site {}
+/* ===========================footer 패밀리사이트+사이트맵 개별 */
+.wrap footer .top .right_menu select {}
+.wrap footer .top .right_menu select option {}
+.wrap footer .top .right_menu .site_map {}
+.wrap footer .top .right_menu .site_map span {}
+.wrap footer .top .right_menu .site_map img {}
+.wrap footer .bottom {}
+.wrap footer .bottom address {}
+.wrap footer .bottom address em {}
+.wrap footer .bottom p {}

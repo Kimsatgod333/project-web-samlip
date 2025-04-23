@@ -1,0 +1,50 @@
+.wrap main {}
+.wrap main .path {
+    text-align:right;
+    margin-left:10px;
+    padding:15px 60px 15px 0;
+    border:1px solid #f1f1f1;
+    border-left:0;
+    border-right:0;
+    background-color:#fcfcfc;
+
+}
+.wrap main .path a {
+    font-size:0.75rem;
+}
+.wrap main .path img {
+    margin:0 10px;
+}
+.wrap main .path em {
+    font-size:0.75rem;
+    font-weight:600;
+}
+.wrap main > * {
+    text-align:center;
+}
+.wrap main h1 {
+    margin-top:80px;
+    margin-bottom:20px;
+    font-size:3.75rem;
+    font-weight:700;
+    letter-spacing:-0.02em;
+}
+.wrap main > p {
+    margin-bottom:80px;
+    font-size:1.125rem;
+    letter-spacing:-0.02em;
+}
+.wrap main .bg {
+    background-color:#fcfcfc;
+    padding:80px 0;
+    letter-spacing:-0.02em;
+}
+/* 레이아웃 위치/정렬 기법 종류 inline-block, float, flex, grid, position */
+.wrap main .bg .ir_list {
+    overflow:hidden;
+}
+.wrap main .bg .ir_list a {
+    float:left;
+}
+.wrap main .bg .ir_list a h2 {}
+.wrap main .bg .ir_list a p {}

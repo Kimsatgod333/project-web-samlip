@@ -96,7 +96,7 @@
     font-weight:600;
 }
 .wrap main .bg .strategy_contents {
-    margin-bottom:40px;
+    padding:40px 0;
 }
 .wrap main .bg .strategy_contents dl {
     background-color:#f1f1f1;

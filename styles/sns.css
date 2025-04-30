@@ -1,4 +1,6 @@
-.wrap main {}
+.wrap main {
+    text-align:center;
+}
 .wrap main .path {
     text-align:right;
     margin-left:10px;
@@ -7,7 +9,6 @@
     border-left:0;
     border-right:0;
     background-color:#fcfcfc;
-    margin-bottom:60px;
 }
 .wrap main .path a {
     font-size:0.72rem;
@@ -19,13 +20,11 @@
     font-size:0.72rem;
     font-weight:600;
 }
-.wrap main > * {
-    text-align:center;
-}
+.wrap main > * {}
 .wrap main h1 {
     font-size:3rem;
     font-weight:700;
-    margin-bottom:20px;
+    margin:60px 0 20px;
 }
 .wrap main > p {
     font-size:1.125rem;
@@ -36,14 +35,19 @@
     padding:80px 0;
 }
 .wrap main .bg .sns_list {
+    width:1280px;
     display:flex;
     flex-flow:row nowrap;
     justify-content:center;
+    /* justify-content:space-between; */
+    margin:0 auto;
 }
 .wrap main .bg .sns_list a {
-    width:350px; height:350px;
+    width:350px; height:300px;
     border:1px solid #ddd;
-    margin-right:30px;
+    background-color:#f5f5f5;
+    margin-right:30px;/* justify-content를 space-between으로 주면 값을 주지 않아도 되나, 간격이 너무 벌어져 임의로 margin 값을 줌 */
+    /* padding-top:80px; */
     display:flex;
     flex-flow:column nowrap;
     justify-content:center;
@@ -55,11 +59,12 @@
     border:1px solid #138FBF;
     box-shadow:0 0 30px rgba(0,0,0,0.2);
 }
-.wrap main .bg .sns_list a h2 {margin-bottom:30px;}
-.wrap main .bg .sns_list a h2 img {}
-.wrap main .bg .sns_list a h3 {
+.wrap main .bg .sns_list a p img {}
+.wrap main .bg .sns_list a h2 {
+    /* margin:15px 0; */
     font-size:1.75rem;
     font-weight:600;
     margin-bottom:15px;
 }
-.wrap main .bg .sns_list a p {}
+.wrap main .bg .sns_list a p:first-child {margin-bottom:30px;}
+.wrap main .bg .sns_list a p:last-child {}

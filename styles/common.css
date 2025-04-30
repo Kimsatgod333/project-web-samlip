@@ -31,12 +31,18 @@
 .wrap header nav .gnb > li:first-child:hover .lnb_bg {
     display:block;
 }
+/* brands lnb편집 */
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg{}
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 {}
-.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li > a {}
-.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li h2 {font-size:1.063rem; font-weight:600; margin-bottom:14px;}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li > a {
+    text-transform:uppercase;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li h2 {
+    font-size:1.063rem; font-weight:600; margin-bottom:14px;
+    text-transform:uppercase;
+}
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 {
-    width:283px;
+    width:287px;
     display:flex;
     flex-flow:row wrap;
     justify-content:flex-start;
@@ -44,30 +50,48 @@
 }
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li {
     width:134px; height:51px;
+    margin-right:15px;
+    filter:grayscale(100%)
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-child(odd) {
     background:#fff url(../images/family_logo/family3.png) no-repeat center center;
-    margin-right:10px;
 }
-.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-of-type(even) {margin-right:0;}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-child(even) {
+    background:#fff url(../images/family_logo/family2.png) no-repeat center center;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-child(3n) {
+    background:#fff url(../images/family_logo/family4.png) no-repeat center center;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li:nth-child(2) .lnb_depth2 li:nth-last-of-type(2) {
+    margin-bottom:0;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li:nth-child(4) .lnb_depth2 li:nth-last-of-type(2) {
+    margin-bottom:0;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-of-type(even) {margin-right:0;}/* 우측 마진 초기화 */
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
-.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 {
-    width:259px;
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li:first-child .lnb_depth2 {
+    width:259px;  /* 로고와 텍스트를 감싸고 있는 그룹의 너비 */
 }
-.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 li {
-    width:259px; height:139px;
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li:first-child .lnb_depth2 li {
+    width:259px; height:139px; /* FAMILY BRAND 너비값 */
     background:#fff url(../images/family_logo/family1.png) no-repeat center center;
     display:flex;
     flex-flow:column nowrap;
     justify-content:center;
-    margin-right:0;
+    margin-right:0;/* 다른 li에 준 margin값 초기화화 */
 }
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 li:last-child {
     background:none; width:max-content; height:max-content;
     margin:0 auto;
+    /* 종합식품기업 브랜드 삼립 텍스트. */
 }
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 li a {}
 .wrap header nav .gnb > li:nth-child(2):hover .lnb_bg {
     display:block;
 }
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li .lnb_depth2 li:hover{filter:none;}/* li에 닿으면 그부분만 컬러로 전환되는 선택자자 */
+/* brands lnb 편집 끝 */
 .wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {
     display:block;
 }

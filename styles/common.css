@@ -9,6 +9,7 @@
     flex-flow:row nowrap;
     justify-content:space-between;
     align-items:center;
+    position:relative;/* lnb_bg의 부모 위치 기준 설정 */
 }
 .wrap header h1 {}
 .wrap header h1 a {}
@@ -21,13 +22,55 @@
     display:flex;
     flex-flow:row nowrap;
 }
-.wrap header nav .gnb li {
+.wrap header nav .gnb > li {
     margin-right:60px;
 }
-.wrap header nav .gnb li:last-child {
+.wrap header nav .gnb > li:last-child {
     margin-right:0;
 }
-.wrap header nav .gnb li a {
+.wrap header nav .gnb > li:first-child:hover .lnb_bg {
+    display:block;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg{}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 {}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li > a {}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li h2 {font-size:1.063rem; font-weight:600; margin-bottom:14px;}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 {
+    width:283px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li {
+    width:134px; height:51px;
+    background:#fff url(../images/family_logo/family3.png) no-repeat center center;
+    margin-right:15px;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-of-type(even) {margin-right:0;}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 {
+    width:259px;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 li {
+    width:259px; height:139px;
+    background:#fff url(../images/family_logo/family1.png) no-repeat center center;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:center;
+    margin-right:0;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 li:last-child {
+    background:none; width:max-content; height:max-content;
+    margin:0 auto;
+}
+.wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 li:first-child .lnb_depth2 li a {}
+.wrap header nav .gnb > li:nth-child(2):hover .lnb_bg {
+    display:block;
+}
+.wrap header nav .gnb > li:nth-child(3):hover .lnb_bg {
+    display:block;
+}
+.wrap header nav .gnb > li > a {
     font-size:1.125rem;
     font-weight:600;
     letter-spacing:-0.02rem;
@@ -36,6 +79,46 @@
     height:92px; display:block;
     line-height:92px;
 }
+/* ===서브메뉴 */
+.wrap header nav .gnb > li .lnb_bg {
+    background:rgba(255,255,255,0.8);
+    position:absolute;
+    left:0; top:92px;
+    width:100%;/* absolute가 적용되어있으면,position이 적용된 부모의 크기에 맞춰서 상대값(%)으로 너비설정이 가능하다. */
+    padding:50px 0;
+    display:none;/* 마우스 올릴때만 보이도록 숨김 */
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 {
+    background-color:yellow;
+    width:max-content;margin:0 auto;
+    display:flex;
+    flex-flow:row nowrap;
+    text-align:center;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li {
+    margin-right:100px;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li:last-child {
+    margin-right:0;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li > a {
+    display:block;
+    margin-bottom:14px;
+    font-size:1.063rem;
+    font-weight:600;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 {
+    border:2px solid red;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li {
+    margin-bottom:16px;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li:last-child {
+    margin-bottom:0;
+}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}
+.wrap header nav .gnb > li .lnb_bg .lnb_depth1 > li .lnb_depth2 li a:last-child {}
+/* ====우측보조메뉴 */
 .wrap header .right_menu_wrap {
     background-color:yellow;
     display:flex;

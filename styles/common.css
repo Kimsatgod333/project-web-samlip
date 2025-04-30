@@ -39,12 +39,13 @@
     width:283px;
     display:flex;
     flex-flow:row wrap;
-    justify-content:center;
+    justify-content:flex-start;
+    align-content:center;
 }
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li {
     width:134px; height:51px;
     background:#fff url(../images/family_logo/family3.png) no-repeat center center;
-    margin-right:15px;
+    margin-right:10px;
 }
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li:nth-of-type(even) {margin-right:0;}
 .wrap header nav .gnb > li:nth-child(2) .lnb_bg .lnb_depth1 > li .lnb_depth2 li a {}

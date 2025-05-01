@@ -79,14 +79,9 @@
     line-height:92px;
 }
 /* ===서브메뉴 */
-.wrap header nav .gnb > li:first-child .lnb_bg {
+.wrap header nav .gnb > li .lnb_bg {
     display:none; /* company에만 적용, 작업이 필요할경우 주석처리 */
-}
-.wrap header nav .gnb > li:nth-child(2) .lnb_bg {
-    display:none;/* brands에 적용 */
-}
-.wrap header nav .gnb > li:nth-child(3) .lnb_bg {
-    display:none; /* ir에 적용 */
+    z-index:999;
 }
 .wrap header nav .gnb > li .lnb_bg {
     background:rgba(255,255,255,0.8);

@@ -1,1 +1,160 @@
 /* index.css 메인 첫 페이지의 <main> */
+/* ====공용 ad 시작 */
+.wrap main {}
+.wrap main {}
+.wrap main .ad_wrap {} /* 슬라이드 + 버튼을 묶는 그룹 */
+.wrap main .ad_wrap .ad_container {} /* 슬라이드 그룹 */
+.wrap main .ad_wrap .ad_container .ad {
+    display:none;/* 모두숨기기 */
+    height:800px;
+    background-position:center;
+    position:relative;
+} /* 슬라이드 */
+.wrap main .ad_wrap .ad_container .ad .ad_txt {
+    background-color:yellow;
+    width:1280px; /* margin:0 auto; absolute의 부유 특성때문에 안먹히는 속성*/
+    position:absolute;
+    bottom:95px; left:50%; transform:translateX(-50%);
+}
+.wrap main .ad_wrap .ad_container .ad .ad_txt h2 {
+    font-size:3.5rem;
+    font-weight:700;
+    color:#fff;
+    margin-bottom:20px;
+}
+.wrap main .ad_wrap .ad_container .ad .ad_txt p {
+    font-weight:500;
+    line-height:1.5;
+    color:#fff;
+}
+.wrap main .ad_wrap .ad_btn {
+    text-align:center;
+    padding:34px 0;
+}
+.wrap main .ad_wrap .ad_btn #ad_prev {margin-right:10px}
+.wrap main .ad_wrap .ad_btn #ad_prev img {}
+.wrap main .ad_wrap .ad_btn #ad_next {
+    transform:scaleX(-1);
+}
+.wrap main .ad_wrap .ad_btn #ad_next img {}
+/* === 광고 버튼 끝 */
+/* ==== 개별ad시작 */
+.wrap main .ad_wrap .ad_container .ad1 {
+    display:block;
+    background-image:url(../images/ad_01.jpg)
+}
+.wrap main .ad_wrap .ad_container .ad1 .ad_txt {}
+.wrap main .ad_wrap .ad_container .ad1 .ad_txt h2 {}
+.wrap main .ad_wrap .ad_container .ad1 .ad_txt p {}
+.wrap main .ad_wrap .ad_container .ad2 {}
+.wrap main .ad_wrap .ad_container .ad2 .ad_txt {}
+.wrap main .ad_wrap .ad_container .ad2 .ad_txt h2 {}
+.wrap main .ad_wrap .ad_container .ad2 .ad_txt p {}
+.wrap main .ad_wrap .ad_container .ad3 {}
+.wrap main .ad_wrap .ad_container .ad3 .ad_txt {}
+.wrap main .ad_wrap .ad_container .ad3 .ad_txt h2 {}
+.wrap main .ad_wrap .ad_container .ad3 .ad_txt p {}
+.wrap main .ad_wrap .ad_container .ad4 {}
+.wrap main .ad_wrap .ad_container .ad4 .ad_txt {}
+.wrap main .ad_wrap .ad_container .ad4 .ad_txt h2 {}
+.wrap main .ad_wrap .ad_container .ad4 .ad_txt p {}
+.wrap main .ad_wrap .ad_container .ad5 {}
+.wrap main .ad_wrap .ad_container .ad5 .ad_txt {}
+.wrap main .ad_wrap .ad_container .ad5 .ad_txt h2 {}
+.wrap main .ad_wrap .ad_container .ad5 .ad_txt p {}
+/* ======== 개별 ad 끝 */
+/* ======== news & notice */
+.wrap main .news_all {
+    text-align:center;
+    padding:50px 0;
+}
+.wrap main .news_all h2 {
+    font-size:3.5rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.wrap main .news_all > p {
+    margin-bottom:20px;
+}
+.wrap main .news_all .news_wrap {
+    border:3px solid red;
+    width:1370px; overflow:hidden;
+    margin:0 auto;
+}
+.wrap main .news_all .news_wrap .news_container {
+    border:3px solid blue;
+    width:max-content;
+    display:flex;
+    flex-flow:row nowrap;
+    padding:100px 0 50px;
+    text-align:left;
+}
+.wrap main .news_all .news_wrap .news_container .news {
+    background-color:yellow;
+    width:311px; height:287px;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #ddd;
+    padding-bottom:20px;
+    margin-right:42px;
+}
+.wrap main .news_all .news_wrap .news_container .news:hover {
+    border:1px solid #138FBF;
+}
+.wrap main .news_all .news_wrap .news_container .news a {}
+.wrap main .news_all .news_wrap .news_container .news a p {
+    margin-bottom:20px;
+}
+.wrap main .news_all .news_wrap .news_container .news a p img {}
+.wrap main .news_all .news_wrap .news_container .news a h3 {
+    margin-bottom:40px;
+    font-size:1.125rem;
+    font-weight:500;
+}
+.wrap main .news_all .news_wrap .news_container .news a .date {
+    font-size:0.875rem;
+}
+.wrap main .news_all .news_wrap .news_btn {}
+.wrap main .news_all .news_wrap .news_btn #news_prev {
+    margin-right:10px;
+}
+.wrap main .news_all .news_wrap .news_btn #news_prev img {}
+.wrap main .news_all .news_wrap .news_btn #news_next {}
+.wrap main .news_all .news_wrap .news_btn #news_next img {
+    transform:scaleX(-1);
+}
+.wrap main .news_all .all_news {
+    width:max-content;
+    margin:20px auto 50px;
+    padding:10px 40px;
+    border:1px solid #000;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+.wrap main .news_all .all_news img {
+    margin-right:10px;
+}
+.wrap main .news_all .all_news em {
+    font-size:0.875rem;
+}
+.wrap main .news_all .all_news:hover {
+    background-color:#000;
+}
+.wrap main .news_all .all_news:hover img {
+    filter:invert(100%);
+}
+.wrap main .news_all .all_news:hover em {
+    color:#fff;
+}
+/* ===all_news hover효과 */
+/* ======news 개별 */
+.wrap main .news_all .news_wrap .news_container .news1 {}
+.wrap main .news_all .news_wrap .news_container .news2 {}
+.wrap main .news_all .news_wrap .news_container .news3 {}
+.wrap main .news_all .news_wrap .news_container .news4 {}
+.wrap main .news_all .news_wrap .news_container .news5 {}
+.wrap main .news_all .news_wrap .news_container .news6 {}
+.wrap main .news_all .news_wrap .news_container .news7 {}
+.wrap main .news_all .news_wrap .news_container .news8 {}

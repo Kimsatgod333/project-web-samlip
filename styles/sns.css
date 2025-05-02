@@ -1,7 +1,7 @@
-.wrap main {
+#wrap main {
     text-align:center;
 }
-.wrap main .path {
+#wrap main .path {
     text-align:right;
     margin-left:10px;
     padding:15px 60px 15px 0;
@@ -10,31 +10,31 @@
     border-right:0;
     background-color:#fcfcfc;
 }
-.wrap main .path a {
+#wrap main .path a {
     font-size:0.72rem;
 }
-.wrap main .path img {
+#wrap main .path img {
     margin:0 10px;
 }
-.wrap main .path em {
+#wrap main .path em {
     font-size:0.72rem;
     font-weight:600;
 }
-.wrap main > * {}
-.wrap main h1 {
+#wrap main > * {}
+#wrap main h1 {
     font-size:3rem;
     font-weight:700;
     margin:60px 0 20px;
 }
-.wrap main > p {
+#wrap main > p {
     font-size:1.125rem;
     margin-bottom:60px;
 }
-.wrap main .bg {
+#wrap main .bg {
     background-color:#fcfcfc;
     padding:80px 0;
 }
-.wrap main .bg .sns_list {
+#wrap main .bg .sns_list {
     width:1280px;
     display:flex;
     flex-flow:row nowrap;
@@ -42,7 +42,7 @@
     /* justify-content:space-between; */
     margin:0 auto;
 }
-.wrap main .bg .sns_list a {
+#wrap main .bg .sns_list a {
     width:350px; height:300px;
     border:1px solid #ddd;
     background-color:#f5f5f5;
@@ -52,19 +52,19 @@
     flex-flow:column nowrap;
     justify-content:center;
 }
-.wrap main .bg .sns_list a:last-child {
+#wrap main .bg .sns_list a:last-child {
     margin-right:0;
 }
-.wrap main .bg .sns_list a:hover {
+#wrap main .bg .sns_list a:hover {
     border:1px solid #138FBF;
     box-shadow:0 0 30px rgba(0,0,0,0.2);
 }
-.wrap main .bg .sns_list a p img {}
-.wrap main .bg .sns_list a h2 {
+#wrap main .bg .sns_list a p img {}
+#wrap main .bg .sns_list a h2 {
     /* margin:15px 0; */
     font-size:1.75rem;
     font-weight:600;
     margin-bottom:15px;
 }
-.wrap main .bg .sns_list a p:first-child {margin-bottom:30px;}
-.wrap main .bg .sns_list a p:last-child {}
+#wrap main .bg .sns_list a p:first-child {margin-bottom:30px;}
+#wrap main .bg .sns_list a p:last-child {}
